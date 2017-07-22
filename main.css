@@ -1,0 +1,174 @@
+/*
+Red = #FFB4B0  
+Blue = #4DD7FA  
+Light yellow = #FEFAC0  
+Dark yellow = #785616
+*/
+
+body{
+	font-family: "Arial", San-serif;
+	font-size: 14px;
+}
+
+#wrapper{
+	width: 70%;
+	margin: 0 auto;
+}
+
+#header{
+	display: flex;
+	justify-content: space-between;
+	background: #FFB4B0;
+	border: 3px solid black;
+	margin: 5px;
+	padding: 10px;
+}
+
+.border{
+	display: flex;
+	justify-content: center;
+	border: 3px solid black;
+	padding: 30px;
+	margin: 5px;
+}
+
+nav{
+/*	width: 70%;*/
+
+
+}
+
+nav ul{
+	list-style-type: none;
+	display: flex;
+/*	justify-content: flex-start;*/
+}
+
+nav ul li{
+
+	
+}
+
+nav ul li a{
+	display: block;
+	width: 100px;
+	text-decoration: none;
+	color: white;
+	margin: 2px;
+	border-radius: 10px;
+	padding: 10px 5px;
+	background: #785616;
+	text-align: center;
+
+}
+
+nav ul li a:hover{
+	background: #4DD7FA;
+	color: #785616;
+	}
+
+.here {
+	background-color: gray;
+
+}
+
+.main-boxes {
+	display: flex;
+	justify-content: space-between;
+}
+
+#search-bar{
+	border: 3px solid black;
+	display: block;
+	width: 20%;
+	margin-right: 10px;
+	margin-left: 5px;
+	background-color: #4DD7FA;
+	padding: 30px;
+}
+
+	select {
+    width: 100%;
+    padding: 20px;
+    margin: 2px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 1em;
+	}
+
+	legend{
+		font-size: 16px;
+		font-weight: bold;
+		padding-top: 10px;
+	}
+
+	#genres{
+		display: flex;
+	}
+
+	.cb1{
+		font-size: 12px;
+	}
+
+#song-list{
+	display: block;
+	margin-right: 5px;
+	border: 3px solid black;
+	width: 75%;
+	background-color: #FEFAC0;
+	padding: 10px 30px;
+
+}
+
+#song-list h1{
+	font-family: "Arial";
+	font-weight: 400;
+	color: #785616;
+}
+
+#song-search{
+	padding: 30px 0px;
+	width: 40%;
+	margin: 0 auto;
+}	
+	button{
+		display: block;
+		font-size: 1em;
+		margin: 0 auto;
+		margin-top: 10px;
+		width: 100px;
+		border: 2px solid black;
+   		border-radius: 4px;
+    	font-size: 1em;
+    	color: black;
+		padding: 5px;
+		background: lightgray;
+		cursor: pointer;
+		  margin-top: 30px;
+	}
+
+
+input[type=text]{
+    padding: 12px 20px;
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type=range]  {
+	line-height: 15px;
+	width: 100%;
+	font-size: 15px;
+    color: #f3f3f3;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+

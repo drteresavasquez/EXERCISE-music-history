@@ -1,0 +1,102 @@
+<!-- 
+1. Create five options for the artist select element of any artist that you enjoy.
+2. Create at least five options for the album select element. One, or more, album for each artist.
+3. The links in the navigation bar don't need to link to anything just yet, you can use <a href="#"> View music</a> for now
+5. Pick your four favorite songs from the artists you have chosen and use the information for each in the list that's on the right-hand side. You can use h1 tags, div tags, section tags... whatever you like. 
+
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+<div id="wrapper">
+<div id="header">
+	<nav>
+		<ul>
+			<li><a href="index.html" class="here"> View music</a> </li>
+			<li><a href="add-music.html">Add Music</a></li>
+			<li><a href="#">Profile</a></li>
+		</ul>
+	</nav>
+	<div id="image"></div>
+</div>
+
+	<main class="main-boxes">
+		<div id="search-bar">
+
+		<legend>Song Length</legend>
+			<input type="range" />
+			<legend>Artists</legend>
+		<select>
+		  <option value="sade">Sade</option>
+		  <option value="maxwell">Maxwell</option>
+		  <option value="eminem">Eminem</option>
+		  <option value="adele">Adele</option>
+		</select>
+
+		<legend>Albums</legend>
+		<select>
+		  <option value="stronger">Stronger than Pride</option>
+		  <option value="lovers-live">Lovers Live</option>
+		  <option value="curtain-call">Curtain Call</option>
+		  <option value="21">21</option>
+		  <option value="maxwell-live">Maxwell Live</option>
+		</select>
+	<legend>Genre</legend>
+	<div id="genres">
+		<div class="cb1">
+		  <input type="checkbox" name="vehicle1" value="jazz"> Jazz<br>
+		  <input type="checkbox" name="vehicle1" value="hip-hop"> Hip-Hop<br>
+		  <input type="checkbox" name="vehicle1" value="neo-soul"> Neo-Soul<br>
+		  </div><div class="cb1">
+		  <input type="checkbox" name="vehicle1" value="reggae"> Reggae<br>
+		  <input type="checkbox" name="vehicle1" value="rap"> Rap<br>
+		  <input type="checkbox" name="vehicle2" value="blues"> Blues 
+		  </div>
+	</div>
+
+		<button id="filter">Filter, Yo!</button>
+		</div>
+
+		<div id="song-list">
+			<h1>Song Name</h1>
+			<p>Artist name | Album name | Genre</p>
+
+			<h1>Song Name</h1>
+			<p>Artist name | Album name | Genre</p>
+
+			<h1>Song Name</h1>
+			<p>Artist name | Album name | Genre</p>
+
+			<h1>Song Name</h1>
+			<p>Artist name | Album name | Genre</p>
+		</div>
+	</main>	
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
