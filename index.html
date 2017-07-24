@@ -20,9 +20,9 @@
 <div id="header">
 	<nav>
 		<ul>
-			<li><a href="index.html" class="here"> View music</a> </li>
-			<li><a href="add-music.html">Add Music</a></li>
-			<li><a href="#">Profile</a></li>
+			<li><a href="#" id="link-home"> Home</a> </li>
+			<li><a href="#" id="link-list">List music</a></li>
+			<li><a href="#" id="link-add">Add Music</a></li>
 		</ul>
 	</nav>
 	<div id="image"></div>
@@ -65,13 +65,35 @@
 		<button id="filter">Filter, Yo!</button>
 		</div>
 
-		<div id="songs" class="song-list">
+		<section class="visible" id="home-view" >
+		  Home
+		</section>
+
+		<section class="hidden" id="list-view">
+		<!--  List Music View -->
+		  <div id="songs" class="song-list">
 			
 		</div>
+		</section>
+
+		<section class="hidden" id="add-view">
+			 <div class="song-list">
+				<div id="song-search">
+					Song Name: <br><input type="text" id="songName" name="songName"><br><br>
+					Artist: <br><input type="text" id="artist" name="artist"><br><br>
+					Album: <br><input type="text" id="albumName" name="albumName"><br><br>
+					Genre: <br><input type="text" id="genre" name="genre"><br><br>
+					<button type="submit" id="submitSong">Add</button>
+				</div>
+			</div>
+		</section>
+
 	</main>	
 </div>
-
-<script type="text/javascript" src="songs.js"></script>
+<script type="text/javascript" src="js/home.js"></script>
+<script type="text/javascript" src="js/list.js"></script>
+<script type="text/javascript" src="js/add.js"></script>
+<script type="text/javascript" src="js/songs.js"></script>
 </body>
 </html>
 
