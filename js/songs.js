@@ -57,6 +57,8 @@ songs.push({
 	Genre: "Rock"
 });
 
+console.table(songs);
+
 songs.forEach((song) => {
 	output.innerHTML += `<h1>${song.Name}</h1>
 			<p>${song.Artist} | ${song.Album} | ${song.Genre}</p>`
