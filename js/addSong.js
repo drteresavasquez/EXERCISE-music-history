@@ -6,6 +6,7 @@ let songName = document.getElementById("songName");
 let artist = document.getElementById("artist");
 let albumName = document.getElementById("albumName");
 let genre = document.getElementById("genre");
+let songsDiv = document.getElementById("ulSongs");
 
 submitSong.addEventListener("click", addSong);
     
@@ -24,11 +25,13 @@ submitSong.addEventListener("click", addSong);
             });
             console.log("addedSongs", addedSongs);
     
-            addedSongs.forEach(function(){
-                output.innerHTML += 
-                                    `<h1>${userSong}</h1>
+            addedSongs.forEach(function(id, index){
+                songsDiv.innerHTML += 
+                                    `<li><div id="${index}" class="oneSong">
+                                    <h1>${userSong}</h1>
                                     <p>${userArtist} | ${userAlbum} | ${userGenre}</p>
-                                    `
+                                    <button id="delBtn--${index}">DELETE</button>
+                                    </div></li>`
     
             })
             

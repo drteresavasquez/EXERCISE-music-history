@@ -124,6 +124,14 @@ nav ul li a:hover{
 	.cb1{
 		font-size: 12px;
 	}
+#songs ul{
+	list-style: none;
+}
+
+#songs ul li button{
+	display: inline-block;
+	margin-top: -20px;
+}
 
 .song-list h1{
 	font-family: "Arial";

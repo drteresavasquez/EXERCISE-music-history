@@ -29,54 +29,29 @@ function getJSON(url){
         loadSongs.open("GET", url);
         loadSongs.send();
  });
+ 
 };
 
 getJSON("data/music1.json")
-    .then(Songs.showSongs)
-    .catch(function(e){
-        console.log(e);
-    });
+.then(Songs.showSongs)
+// .then(stupidButton)
+.catch(function(e){
+    console.log(e);
+});
 
-    let songsDiv = document.getElementById("songs");
+
+    let songsDiv = document.getElementById("ulSongs");
     
     Songs.showSongs = (songs, item) => {
         indSongs = Object.keys(songData.songs);
         // console.log(indSongs);
         indSongs.forEach((id, index) => {
             songsDiv.innerHTML += 
-                    `<div id="song--${index}" class="oneSong"><h1>${songData.songs[id].Name}</h1>
+                    `<li><div id="${index}" class="oneSong"><h1>${songData.songs[id].Name}</h1>
                     <p>${songData.songs[id].Artist} | ${songData.songs[id].Album} | ${songData.songs[id].Genre}</p>
                     <button id="delBtn--${index}">DELETE</button>
-                    </div>`
+                    </div></li>`
             })
-
 };
 
-Songs.deleteSong = function(id) {
-    delete `song--[id]`;
-    // return songData;
-  };
-
-  songsDiv.addEventListener('click', function(event) {
-   
-    Songs.deleteSong(event.target.id);
-    songsDiv.innerHTML = '';
-    // Chatty.rewriteMessagesAfterDelete(Chatty.getAllMessages());
-  });
-
-
-
-
-
-
-
-
-
-//     Songs.waitForDOM = (input) => {
-// 		for (var i = 0 ; i < input.length; i++){
-//             input[i].addEventListener("click", () => {
-//                 songID = event.currentTarget.id;
-// 			});
-//         };
-//     };
 }
