@@ -1,0 +1,38 @@
+{"songs":[
+    { 
+        "Name": "Lose Yourself2",
+        "Artist": "Eminem",
+        "Album": "Curtain Call",
+        "Genre": "Rock"
+    },
+    { 
+        "Name": "Legs2",
+        "Artist": "ZZTop",
+        "Album": "Eliminator",
+        "Genre": "Rock"
+    },
+    { 
+        "Name": "The Logical Song2",
+        "Artist": "Supertramp",
+        "Album": "Breakfast in America",
+        "Genre": "Rock"
+    },
+    { 
+        "Name": "Another Brick in the Wall2",
+        "Artist": "Pink Floyd",
+        "Album": "The Wall",
+        "Genre": "Rock"
+    },
+    { 
+        "Name": "Welcome to the Jungle 2",
+        "Artist": "Guns & Roses",
+        "Album": "Appetite for Destruction",
+        "Genre": "Rock"
+    },
+    { 
+        "Name": "Ironic2",
+        "Artist": "Alanis Morisette",
+        "Album": "Jagged Little Pill",
+        "Genre": "Rock"
+    }
+]}
