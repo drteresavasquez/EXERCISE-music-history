@@ -47,11 +47,18 @@ getJSON("data/music1.json")
         // console.log(indSongs);
         indSongs.forEach((id, index) => {
             songsDiv.innerHTML += 
-                    `<li><div id="${index}" class="oneSong"><h1>${songData.songs[id].Name}</h1>
+                    `<li>
+                    <div id="${index}" class="oneSong">
+                    <h1>${songData.songs[id].Name}</h1>
                     <p>${songData.songs[id].Artist} | ${songData.songs[id].Album} | ${songData.songs[id].Genre}</p>
-                    <button id="delBtn--${index}">DELETE</button>
-                    </div></li>`
+                    <button class="delBtn">DELETE</button>
+                    </div>
+                    </li>`
             })
+$(".delBtn").on("click", function(){
+    $(this).parent().parent().remove()
+});
+
 };
 
 }

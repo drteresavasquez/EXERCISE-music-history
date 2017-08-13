@@ -6,12 +6,14 @@ let songName = document.getElementById("songName");
 let artist = document.getElementById("artist");
 let albumName = document.getElementById("albumName");
 let genre = document.getElementById("genre");
-let songsDiv = document.getElementById("ulSongs");
+let addedSongsHTML = document.getElementById("addedSongs");
 
 submitSong.addEventListener("click", addSong);
-    
+
+
     var addedSongs = [];
         function addSong(userInput) {
+            addedSongsHTML.innerHTML = "";
             let userSong = songName.value;
             let userArtist = artist.value;
             let userAlbum = albumName.value;
@@ -26,14 +28,18 @@ submitSong.addEventListener("click", addSong);
             console.log("addedSongs", addedSongs);
     
             addedSongs.forEach(function(id, index){
-                songsDiv.innerHTML += 
-                                    `<li><div id="${index}" class="oneSong">
+                addedSongsHTML.innerHTML += 
+                                    `<li>
+                                    <div id="${index}" class="oneSong">
                                     <h1>${userSong}</h1>
                                     <p>${userArtist} | ${userAlbum} | ${userGenre}</p>
-                                    <button id="delBtn--${index}">DELETE</button>
+                                    <button class="delBtn">DELETE</button>
                                     </div></li>`
     
             })
+            $(".delBtn").on("click", function(){
+                $(this).parent().parent().remove()
+            });
             
         };
 
