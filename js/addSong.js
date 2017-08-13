@@ -9,9 +9,8 @@ let genre = document.getElementById("genre");
 let addedSongsHTML = document.getElementById("addedSongs");
 
 submitSong.addEventListener("click", addSong);
+        var addedSongs = [];
 
-
-    var addedSongs = [];
         function addSong(userInput) {
             addedSongsHTML.innerHTML = "";
             let userSong = songName.value;
