@@ -1,12 +1,10 @@
-var homeLink = document.getElementById("link-home");
-var homeView = document.getElementById("home-view");
 
-homeLink.addEventListener("click", function() {
+$("#link-home").on("click", function() {
 	 event.preventDefault();
-  listView.classList.add("hidden");
-  addView.classList.add("hidden");
+   $("#list-view").addClass("hidden");
+  $("#add-view").addClass("hidden");
 
-  homeView.classList.add("visible");
-  homeView.classList.remove("hidden");
+ $("#home-view").addClass("visible");
+ $("#home-view").removeClass("hidden");
 
 });

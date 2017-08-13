@@ -1,22 +1,17 @@
 console.log("addSongs.js, YO!");
 
 {
-let submitSong = document.getElementById("submitSong");
-let songName = document.getElementById("songName");
-let artist = document.getElementById("artist");
-let albumName = document.getElementById("albumName");
-let genre = document.getElementById("genre");
-let addedSongsHTML = document.getElementById("addedSongs");
 
-submitSong.addEventListener("click", addSong);
+$("#submitSong").on("click", addSong);
+
         var addedSongs = [];
 
         function addSong(userInput) {
             addedSongsHTML.innerHTML = "";
-            let userSong = songName.value;
-            let userArtist = artist.value;
-            let userAlbum = albumName.value;
-            let userGenre = genre.value;
+            let userSong = $('#songName').val();
+            let userArtist = $('#artist').val();
+            let userAlbum = $('#albumName').val();
+            let userGenre = $('#genre').val();
             
             addedSongs.push({
                 Name: userSong,

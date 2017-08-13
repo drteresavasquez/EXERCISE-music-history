@@ -45,15 +45,15 @@ getJSON("data/music1.json")
     Songs.showSongs = (songs, item) => {
         indSongs = Object.keys(songData.songs);
         // console.log(indSongs);
-        indSongs.forEach((id, index) => {
-            songsDiv.innerHTML += 
-                    `<li>
-                    <div id="${index}" class="oneSong">
-                    <h1>${songData.songs[id].Name}</h1>
-                    <p>${songData.songs[id].Artist} | ${songData.songs[id].Album} | ${songData.songs[id].Genre}</p>
-                    <button class="delBtn">DELETE</button>
-                    </div>
-                    </li>`
+       indSongs.forEach(function(index, id) {
+        songsDiv.innerHTML += `<li>
+            <div id="${index}" class="oneSong">
+            <h1>${songData.songs[id].Name}</h1>
+            <p>${songData.songs[id].Artist} | ${songData.songs[id].Album} | ${songData.songs[id].Genre}</p>
+            <button class="delBtn">DELETE</button>
+            </div>
+            </li>`
+                    
             })
 $(".delBtn").on("click", function(){
     $(this).parent().parent().remove()

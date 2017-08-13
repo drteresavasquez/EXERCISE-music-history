@@ -1,12 +1,12 @@
-var addLink = document.getElementById("link-add");
-var addView = document.getElementById("add-view");
+// Implement jQuery in your Music History code. Every innerHTML, getElementById, getElementByClassName, event listener and XHR request. Convert 'em all.
 
-addLink.addEventListener("click", function() {
+
+$("#link-add").on("click", function() {
 	 event.preventDefault();
-  homeView.classList.add("hidden");
-  listView.classList.add("hidden");
+   $("#home-view").addClass("hidden");
+   $("#list-view").addClass("hidden");
 
-  addView.classList.add("visible");
-  addView.classList.remove("hidden");
+  $("#add-view").addClass("visible");
+  $("#add-view").removeClass("hidden");
 
 });
